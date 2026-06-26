@@ -115,7 +115,7 @@ async function unlockQuestions() {
 }
 
 async function fetchEncryptedQuestions() {
-  const response = await fetch("questions.enc.json", { cache: "no-store" });
+  const response = await fetch(`questions.enc.json?v=${Date.now()}`, { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error(`questions.enc.json konnte nicht geladen werden: ${response.status}`);
