@@ -1,10 +1,11 @@
-const CACHE_NAME = "a320-trainer-v3";
+const CACHE_NAME = "a320-trainer-v5-autocheck-fix";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
+  "./app.js?v=5",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png"

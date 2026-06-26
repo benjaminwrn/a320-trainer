@@ -79,3 +79,19 @@ http://localhost:8000/tools/encrypt.html
 ## Daten
 
 Statistik und Versuche werden lokal im Browser gespeichert (`localStorage`). Sie werden nicht synchronisiert und nicht an einen Server gesendet.
+
+
+## Update: Auto-Check im Lernmodus
+
+In dieser Version wird im Lernmodus eine Antwort direkt beim Anklicken geprüft.
+
+- Richtige Antwort: wird grün markiert und nach ca. 1 Sekunde geht es automatisch zur nächsten Frage.
+- Falsche Antwort: gewählte Antwort wird rot markiert, richtige Antwort grün; danach manuell mit „Nächste Frage“ weiter.
+- Testprüfung: unverändert, keine Anzeige der Lösung während der Prüfung.
+
+Für GitHub/Vercel/Cloudflare müssen mindestens diese Dateien ersetzt werden:
+
+- app.js
+- service-worker.js
+
+Danach die Seite mit `?v=4` öffnen und auf dem iPhone ggf. Website-Daten löschen.
